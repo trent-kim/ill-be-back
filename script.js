@@ -35,11 +35,11 @@ function draw() {
  }
 
 
- setTimeout(function() {
+ $(document).ready(function() {
     $('#closeYourEyes').fadeIn(800, function() {
         setTimeout(function() {
             $("#closeYourEyes").fadeOut(1200)}, 5000);});
- }, 3000)
+ })
 
 
 function playAudio(){
