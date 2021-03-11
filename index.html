@@ -1,25 +1,32 @@
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.typekit.net/myr8xjh.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/script.js"></script>
   </head>  
   <body>
-    <audio id="gondry" src="/media/gondry-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls ></audio>
-    <audio id="goodFortune" src="/media/good-fortune-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="kimchiJigae" src="/media/kimchi-jigae-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="shower" src="/media/shower-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
+    <audio id="gondry" src="/media/gondry-trimmed.WAV" type="audio/wav" preload="auto" autobuffer  ></audio>
+    <audio id="goodFortune" src="/media/good-fortune-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="kimchiJigae" src="/media/kimchi-jigae-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="shower" src="/media/shower-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
 
-    <audio id="notFeelingWell" src="/media/not-feeling-well-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="lateForSchool" src="/media/late-for-school-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="whereAreYouGoing" src="/media/where-are-you-going-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="areYouSleeping" src="/media/are-you-sleeping-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="subwayInKorea" src="/media/subway-in-korea-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="dinnerIsReady" src="/media/dinner-is-ready-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="eating" src="/media/eating-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="needRice" src="/media/need-rice-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-    <audio id="learningKorean" src="/media/learning-korean-trimmed.WAV" type="audio/wav" preload="auto" autobuffer controls></audio>
-
-    <button id="playAudio" onclick="playAudio()">Play Audio</button>
+    <audio id="notFeelingWell" src="/media/not-feeling-well-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="lateForSchool" src="/media/late-for-school-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="whereAreYouGoing" src="/media/where-are-you-going-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="areYouSleeping" src="/media/are-you-sleeping-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="subwayInKorea" src="/media/subway-in-korea-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="dinnerIsReady" src="/media/dinner-is-ready-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="eating" src="/media/eating-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="needRice" src="/media/need-rice-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="learningKorean" src="/media/learning-korean-trimmed.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="goodFortune2" src="/media/good-fortune-trimmed-2.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="kimchiJigae2" src="/media/kimchi-jigae-trimmed-2.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <audio id="shower2" src="/media/shower-trimmed-2.WAV" type="audio/wav" preload="auto" autobuffer ></audio>
+    <button class="playAudio" onclick="playAudio()">Play</button>
+    <div id="message">
+      <div id="closeYourEyes">(close your eyes)</div>
+    </div>
   </body>
 </html>

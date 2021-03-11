@@ -1,3 +1,36 @@
 body {
-    font-family: 'Times New Roman', Times, serif;    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black; 
+    display: inline-flex;
+    align-items: flex-end;
+    
+}
+
+
+button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: source-code-pro, monospace;
+    font-size: 24px;
+    margin: 0vw 0vw 10vh 10vw;
+}
+
+button:hover {
+    text-decoration: line-through;
+}
+
+#closeYourEyes {
+    color: white;
+    font-size: 48px;
+    
+}
+
+#message {
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    margin: 0vw 10vw 10vh 40vw;
+
 }
