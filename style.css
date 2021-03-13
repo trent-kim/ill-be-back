@@ -6,7 +6,6 @@ body {
     
 }
 
-
 button {
     position: absolute;
     background-color: transparent;
@@ -21,7 +20,7 @@ button:hover {
     text-decoration: line-through;
 }
 
-#closeYourEyes {
+.closeYourEyes {
     color: white;
     font-size: 48px;
     
@@ -29,8 +28,11 @@ button:hover {
 
 #message {
     position: absolute;
-    align-content: center;
-    justify-content: center;
-    margin: 0vw 10vw 10vh 40vw;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
 
+.hidden {
+    display: none
 }

@@ -1,45 +1,54 @@
 let x = 1;
 let y = 1;
-let easing = 0.01;
+let easing = 0.005;
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     noStroke();
   }
   
-function draw() {
+  function draw() {
     background(100);
     
-    
-    let dx = mouseX - x;
+    let dx = mouseX - x - width / 2;
     x += dx * easing;
   
-    let dy = mouseY - y;
+    let dy = mouseY - y - height / 2;
     y += dy * easing;
-
-    // calculate distance from center to mouseX
-    let lightX = mouseX - width / 2;
-    let lightY = mouseY - height / 2;
     
-    // red spotlight
-    // axis located at lightX, lightY, 500
-    // axis direction of light: 0, 0, -1
-    spotLight(207, 17, 93, x, y, 6000, 0, 0, -1);
+    spotLight(224, 27, 93, x, y, 6000, 0, 0, -1);
     
-    // place box on (0, 0, 0), size 100
     rect(windowWidth / -2, windowHeight / -2, windowWidth, windowHeight);
-}
+  }
 
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
  }
 
 
- $(document).ready(function() {
-    $('#closeYourEyes').fadeIn(800, function() {
-        setTimeout(function() {
-            $("#closeYourEyes").fadeOut(1200)}, 5000);});
- })
+let message = "(put on headphones...)";
+
+setTimeout(function() {
+    $(".hidden").html(message).fadeIn(1200).removeClass("hidden");
+    console.log(message);
+    let messageTimer = setInterval(function() {
+        if (message == "(put on headphones...)") {
+            message = "(...click play)"
+            $(".closeYourEyes").fadeOut(1200, function() {
+                $(".closeYourEyes").html(message).fadeIn(1200)});
+        } else if (message == "(...click play)") {
+            message = "(...and close your eyes)"
+            $(".closeYourEyes").fadeOut(1200, function() {
+                $(".closeYourEyes").html(message).fadeIn(1200)});
+        } else if (message == "(...and close your eyes)") {
+            message = "stop"
+            $(".closeYourEyes").fadeOut(1200);
+        } else {
+            clearInterval(messageTimer);
+        }
+    }, 5000);
+    messageTimer;
+ }, 3000)
 
 
 function playAudio(){
