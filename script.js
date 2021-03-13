@@ -33,10 +33,10 @@ setTimeout(function() {
     console.log(message);
     let messageTimer = setInterval(function() {
         if (message == "(put on headphones...)") {
-            message = "(...click play)"
+            message = "(listen...)"
             $(".closeYourEyes").fadeOut(1200, function() {
                 $(".closeYourEyes").html(message).fadeIn(1200)});
-        } else if (message == "(...click play)") {
+        } else if (message == "(listen...)") {
             message = "(...and close your eyes)"
             $(".closeYourEyes").fadeOut(1200, function() {
                 $(".closeYourEyes").html(message).fadeIn(1200)});
